@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRIADOR DE CURRÍCULOS</title>
+
+    <link rel="stylesheet" href="./style.css" type="text/css">
+    <script src="./script.js"></script>
+
+</head>
+
+<body>
+
+    <div class="allpageContainer">
+
+        <header id="headerContainer">
+
+            <h2 id="headerLogo">CRIADOR DE CURRÍCULOS</h2>
+
+            <ul id="headerButtons">
+                <a href="">
+                    <li>HOME</li>
+                </a>
+                <a href="">
+                    <li>COMO USAR</li>
+                </a>
+                <a href="">
+                    <li>PLANOS MENSAIS</li>
+                </a>
+                <a href="">
+                    <li>CRIAR UMA CONTA</li>
+                </a>
+            </ul>
+
+        </header>
+
+        <div id="leftColumn">
+
+            <section id="personalInfo">
+
+                <hr>
+
+                <h3>DADOS PESSOAIS</h3>
+
+                <hr>
+
+                <div id="pInfoInputs">
+
+                    <form id="form1">
+
+                        <div class="halfLineInput">
+                            <span>Nome/Sobrenome:</span>
+                            <input id="nameInput" type="text" name="name" placeholder="ex: Fulano de Tal">
+                        </div>
+
+                        <div class="halfLineInput">
+                            <span>Nacionalidade:</span>
+                            <input id="nationalityInput" type="text" name="nacionality" placeholder="ex: Brasileiro">
+                        </div>
+
+                        <div class="halfLineInput">
+                            <span>Estado Civil:</span>
+                            <input id="civilStatusInput" type="text" name="civilStatus" placeholder="ex: Solteiro">
+                        </div>
+
+                        <div class="halfLineInput">
+                            <span>Idade:</span>
+                            <input id="ageInput" type="text" name="age" placeholder="ex: 26 anos">
+                        </div>
+
+                        <span>Endereço (rua, nº, complemento):</span>
+                        <textarea id="homeAdressInput" class="twoLinesTextArea" type="text" name="homeAdress"
+                            placeholder="ex: Rua das Oliveiras, nº 137, apto. 202"></textarea>
+
+                        <span>Bairro:</span>
+                        <input id="districtInput" type="text" name="district" placeholder="ex: Bairro Morumbi">
+
+                        <span>Cidade/UF:</span>
+                        <input id="cityStateInput" type="text" name="cityState" placeholder="ex: Uberlândia/MG">
+
+                        <span>Telefone/Celular:</span>
+                        <input id="phoneNumberInput" type="text" name="phoneNumber" placeholder="ex: (034) 9 9999-9999">
+
+                        <span>E-mail:</span>
+                        <input id="emailInput" type="text" name="email" placeholder="ex: fulanodetal@gmail.com">
+
+                        <span>Objetivo:</span>
+                        <textarea id="objectiveInput" class="fourLinesTextArea" type="text" name="objective"
+                            placeholder='ex: "Vaga de Advogado ou Assistente Jurídico, para crescimento profissional, sempre contribuindo para o bom desempenho do escritório."'></textarea>
+
+                        <span>Formações Acadêmicas:</span>
+                        <textarea id="academicFormationInput" class="fourLinesTextArea" type="text"
+                            name="academicFormation"
+                            placeholder='ex: "Bacharel em Direito pela Faculdade ESAMC, Uberlândia. Conclusão do curso em junho de 2020."'></textarea>
+                        <div class="extraButton addAcademicFormation">+</div>
+
+                        <textarea class="academicFormationInputExtra fourLinesTextArea" type="text"
+                            name="academicFormation"
+                            placeholder='ex: "Bacharel em Direito pela Faculdade ESAMC, Uberlândia. Conclusão do curso em junho de 2020."'
+                            style="display: none"></textarea>
+                        <div class="extraButtonMinus eraseAcademicFormation" style="display: none">-</div>
+                        <div class="extraButton addAcademicFormation" style="display: none">+</div>
+
+                        <textarea class="academicFormationInputExtra fourLinesTextArea" type="text"
+                            name="academicFormation"
+                            placeholder='ex: "Bacharel em Direito pela Faculdade ESAMC, Uberlândia. Conclusão do curso em junho de 2020."'
+                            style="display: none"></textarea>
+                        <div class="extraButtonMinus eraseAcademicFormation" style="display: none">-</div>
+                        <div class="extraButton addAcademicFormation" style="display: none">+</div>
+
+                        <textarea class="academicFormationInputExtra fourLinesTextArea" type="text"
+                            name="academicFormation"
+                            placeholder='ex: "Bacharel em Direito pela Faculdade ESAMC, Uberlândia. Conclusão do curso em junho de 2020."'
+                            style="display: none"></textarea>
+                        <div class="extraButtonMinus eraseAcademicFormation" style="display: none">-</div>
+                        <div class="extraButton addAcademicFormation" style="display: none">+</div>
+
+                        <textarea class="academicFormationInputExtra fourLinesTextArea" type="text"
+                            name="academicFormation"
+                            placeholder='ex: "Bacharel em Direito pela Faculdade ESAMC, Uberlândia. Conclusão do curso em junho de 2020."'
+                            style="display: none"></textarea>
+                        <div class="extraButtonMinus eraseAcademicFormation" style="display: none">-</div>
+                        <div class="extraButton addAcademicFormation" style="display: none">+</div>
+
+                        <span>Experiências Profissionais:</span>
+                        <textarea id="professionalExperienceInput" class="fourLinesTextArea" type="text"
+                            name="professionalExperience" placeholder='ex: 
+                    "Assistente de Seguros em Prestserv Seguros, entre janeiro de 2017 e março de 2020; 
+                    Advogado em Nolasco Sociedade de Advogados, de março de 2020 até março 2022."'></textarea>
+                        <div class="extraButton addprofessionalExperience">+</div>
+
+                        <textarea class="professionalExperienceInputExtra fourLinesTextArea" type="text"
+                            name="professionalExperience" placeholder='ex: 
+                "Assistente de Seguros em Prestserv Seguros, entre janeiro de 2017 e março de 2020; 
+                Advogado em Nolasco Sociedade de Advogados, de março de 2020 até março 2022."'
+                            style="display: none"></textarea>
+                        <div class="extraButtonMinus eraseprofessionalExperience" style="display: none">-</div>
+                        <div class="extraButton addprofessionalExperience" style="display: none">+</div>
+
+                        <textarea class="professionalExperienceInputExtra fourLinesTextArea" type="text"
+                            name="professionalExperience" placeholder='ex: 
+            "Assistente de Seguros em Prestserv Seguros, entre janeiro de 2017 e março de 2020; 
+            Advogado em Nolasco Sociedade de Advogados, de março de 2020 até março 2022."'
+                            style="display: none"></textarea>
+                        <div class="extraButtonMinus eraseprofessionalExperience" style="display: none">-</div>
+                        <div class="extraButton addprofessionalExperience" style="display: none">+</div>
+
+                        <textarea class="professionalExperienceInputExtra fourLinesTextArea" type="text"
+                            name="professionalExperience" placeholder='ex: 
+            "Assistente de Seguros em Prestserv Seguros, entre janeiro de 2017 e março de 2020; 
+            Advogado em Nolasco Sociedade de Advogados, de março de 2020 até março 2022."'
+                            style="display: none"></textarea>
+                        <div class="extraButtonMinus eraseprofessionalExperience" style="display: none">-</div>
+                        <div class="extraButton addprofessionalExperience" style="display: none">+</div>
+
+                        <textarea class="professionalExperienceInputExtra fourLinesTextArea" type="text"
+                            name="professionalExperience" placeholder='ex: 
+            "Assistente de Seguros em Prestserv Seguros, entre janeiro de 2017 e março de 2020; 
+            Advogado em Nolasco Sociedade de Advogados, de março de 2020 até março 2022."'
+                            style="display: none"></textarea>
+                        <div class="extraButtonMinus eraseprofessionalExperience" style="display: none">-</div>
+                        <div class="extraButton addprofessionalExperience" style="display: none">+</div>
+
+                        <span>Qualificações e Atividades Complementares:</span>
+                        <textarea id="qualificationsInput" class="fourLinesTextArea" type="text" name="qualifications"
+                            placeholder='ex: 
+                            "Inglês Intermediário;
+                            Domínio do Pacote Office;
+                            Conhecimento básico de informática."'></textarea>
+                        <div class="extraButton addQualifications">+</div>
+
+                        <textarea class="qualificationsInputExtra fourLinesTextArea" type="text" name="qualifications"
+                            placeholder='ex: 
+                            "Inglês Intermediário;
+                            Domínio do Pacote Office;
+                            Conhecimento básico de informática."' style="display: none"></textarea>
+                        <div class="extraButtonMinus eraseQualifications" style="display: none">-</div>
+                        <div class="extraButton addQualifications" style="display: none">+</div>
+
+                        <textarea class="qualificationsInputExtra fourLinesTextArea" type="text" name="qualifications"
+                            placeholder='ex: 
+                            "Inglês Intermediário;
+                            Domínio do Pacote Office;
+                            Conhecimento básico de informática."' style="display: none"></textarea>
+                        <div class="extraButtonMinus eraseQualifications" style="display: none">-</div>
+                        <div class="extraButton addQualifications" style="display: none">+</div>
+
+                        <textarea class="qualificationsInputExtra fourLinesTextArea" type="text" name="qualifications"
+                            placeholder='ex: 
+                            "Inglês Intermediário;
+                            Domínio do Pacote Office;
+                            Conhecimento básico de informática."' style="display: none"></textarea>
+                        <div class="extraButtonMinus eraseQualifications" style="display: none">-</div>
+                        <div class="extraButton addQualifications" style="display: none">+</div>
+
+                        <textarea class="qualificationsInputExtra fourLinesTextArea" type="text" name="qualifications"
+                            placeholder='ex: 
+                            "Inglês Intermediário;
+                            Domínio do Pacote Office;
+                            Conhecimento básico de informática."' style="display: none"></textarea>
+                        <div class="extraButtonMinus eraseQualifications" style="display: none">-</div>
+                        <div class="extraButton addQualifications" style="display: none">+</div>
+
+                        <span>Perfil:</span>
+                        <textarea id="profileInput" class="fourLinesTextArea" type="text" name="profile"
+                            placeholder='ex: "Sou proativo e ótimo em trabalho em equipe, buscando sempre antecipar as necessidades de meus superiores e colegas."'></textarea>
+
+                        <span>Informações Adicionais:</span>
+                        <textarea id="additionalInformationsInput" class="twoLinesTextArea" type="text"
+                            name="additionalInformations"
+                            placeholder='ex:  "CNH - Categoria B, carro próprio."'></textarea>
+                        <div class="extraButton addInformations">+</div>
+
+                        <textarea class="additionalInformationsInputExtra twoLinesTextArea" type="text"
+                            name="additionalInformations" placeholder='ex:  "CNH - Categoria B, carro próprio."'
+                            style="display: none"></textarea>
+                        <div class="extraButtonMinus eraseInformations" style="display: none">-</div>
+                        <div class="extraButton addInformations" style="display: none">+</div>
+
+                        <textarea class="additionalInformationsInputExtra twoLinesTextArea" type="text"
+                            name="additionalInformations" placeholder='ex:  "CNH - Categoria B, carro próprio."'
+                            style="display: none"></textarea>
+                        <div class="extraButtonMinus eraseInformations" style="display: none">-</div>
+                        <div class="extraButton addInformations" style="display: none">+</div>
+
+                        <textarea class="additionalInformationsInputExtra twoLinesTextArea" type="text"
+                            name="additionalInformations" placeholder='ex:  "CNH - Categoria B, carro próprio."'
+                            style="display: none"></textarea>
+                        <div class="extraButtonMinus eraseInformations" style="display: none">-</div>
+                        <div class="extraButton addInformations" style="display: none">+</div>
+
+                        <textarea class="additionalInformationsInputExtra twoLinesTextArea" type="text"
+                            name="additionalInformations" placeholder='ex:  "CNH - Categoria B, carro próprio."'
+                            style="display: none"></textarea>
+                        <div class="extraButtonMinus eraseInformations" style="display: none">-</div>
+                        <div class="extraButton addInformations" style="display: none">+</div>
+
+                        <input id="cleanForm" type="button" value="Limpar">
+
+                    </form>
+
+                </div>
+
+            </section>
+
+        </div>
+
+        <div id="centerColumn">
+
+            <div id="pageContainer">
+                <div id="stripJS"></div>
+                <div id="pInfoFirstBloc">
+                    <h1 id="nameText">"Nome Completo"</h1>
+                    <span id="nacionalityText" class="textSizeChangerParagraphs">"Nacionalidade",</span>
+                    <span id="civilStatusText" class="textSizeChangerParagraphs">"Estado Civil",</span>
+                    <span id="ageText" class="textSizeChangerParagraphs">"Idade"</span>
+                    <br>
+                    <span id="homeAdressText" class="textSizeChangerParagraphs">"Rua", "nº", "complemento"</span>
+                    <br>
+                    <span id="districtText" class="textSizeChangerParagraphs">"Bairro" -</span>
+                    <span id="cityStateText" class="textSizeChangerParagraphs">"Cidade/UF"</span>
+                    <br>
+                    <span id="phoneNumberText" class="textSizeChangerParagraphs">"Telefone/Celular" /</span>
+                    <span id="emailText" class="textSizeChangerParagraphs">"E-mail"</span>
+                </div>
+
+                <div id="objectiveBloc">
+                    <h2 class="textSizeChangerTitles">OBJETIVO</h2>
+                    <hr class="horizontalLine">
+                    <p id="objectiveText" class="textSizeChangerParagraphs"><span class="marker">•</span>Descreva o seu
+                        objetivo</p>
+                </div>
+
+                <div id="academicFormationBloc">
+                    <h2 class="textSizeChangerTitles">FORMAÇÃO ACADÊMICA</h2>
+                    <hr class="horizontalLine">
+                    <p id="academicFormationText" class="textSizeChangerParagraphs"><span
+                            class="marker">•</span>Descreva sua Formação Acadêmica
+                    </p>
+                    <p class="academicFormationTextExtra textSizeChangerParagraphs" style="display: none"><span
+                            class="marker">•</span>Descreva sua Formação Acadêmica
+                    </p>
+                    <p class="academicFormationTextExtra textSizeChangerParagraphs" style="display: none"><span
+                            class="marker">•</span>Descreva sua Formação Acadêmica
+                    </p>
+                    <p class="academicFormationTextExtra textSizeChangerParagraphs" style="display: none"><span
+                            class="marker">•</span>Descreva sua Formação Acadêmica
+                    </p>
+                    <p class="academicFormationTextExtra textSizeChangerParagraphs" style="display: none"><span
+                            class="marker">•</span>Descreva sua Formação Acadêmica
+                    </p>
+                </div>
+
+                <div id="professionalExperienceBloc">
+                    <h2 class="textSizeChangerTitles">EXPERIÊNCIA PROFISSIONAL</h2>
+                    <hr class="horizontalLine">
+                    <p id="professionalExperienceText" class="textSizeChangerParagraphs"><span
+                            class="marker">•</span>Descreva sua experiência
+                        profissional</p>
+                    <p class="professionalExperienceTextExtra textSizeChangerParagraphs" style="display: none"><span
+                            class="marker">•</span>Descreva sua experiência
+                        profissional</p>
+                    <p class="professionalExperienceTextExtra textSizeChangerParagraphs" style="display: none"><span
+                            class="marker">•</span>Descreva sua experiência
+                        profissional</p>
+                    <p class="professionalExperienceTextExtra textSizeChangerParagraphs" style="display: none"><span
+                            class="marker">•</span>Descreva sua experiência
+                        profissional</p>
+                    <p class="professionalExperienceTextExtra textSizeChangerParagraphs" style="display: none"><span
+                            class="marker">•</span>Descreva sua experiência
+                        profissional</p>
+                </div>
+
+
+                <div id="qualificationsBloc">
+                    <h2 class="textSizeChangerTitles">QUALIFICAÇÕES E ATIVIDADES COMPLEMENTARES</h2>
+                    <hr class="horizontalLine">
+                    <p id="qualificationsText" class="textSizeChangerParagraphs"><span class="marker">•</span>Descreva
+                        suas qualificações</p>
+                    <p class="qualificationsTextExtra textSizeChangerParagraphs" style="display: none"><span
+                            class="marker">•</span>Descreva
+                        suas qualificações</p>
+                    <p class="qualificationsTextExtra textSizeChangerParagraphs" style="display: none"><span
+                            class="marker">•</span>Descreva
+                        suas qualificações</p>
+                    <p class="qualificationsTextExtra textSizeChangerParagraphs" style="display: none"><span
+                            class="marker">•</span>Descreva
+                        suas qualificações</p>
+                    <p class="qualificationsTextExtra textSizeChangerParagraphs" style="display: none"><span
+                            class="marker">•</span>Descreva
+                        suas qualificações</p>
+                </div>
+
+                <div id="profileBloc">
+                    <h2 class="textSizeChangerTitles">PERFIL</h2>
+                    <hr class="horizontalLine">
+                    <p id="profileText" class="textSizeChangerParagraphs"><span class="marker">•</span>Descreva o seu
+                        perfil</p>
+                </div>
+
+                <div id="additionalInformationsBloc">
+                    <h2 class="textSizeChangerTitles">INFORMAÇÕES ADICIONAIS</h2>
+                    <hr class="horizontalLine">
+                    <p id="additionalInformationsText" class="textSizeChangerParagraphs"><span
+                            class="marker">•</span>Cite as informações
+                        adicionais que acredite que são relevantes
+                    </p>
+                    <p class="additionalInformationsTextExtra textSizeChangerParagraphs" style="display: none"><span
+                            class="marker">•</span>Cite as informações
+                        adicionais que acredite que são relevantes
+                    </p>
+                    <p class="additionalInformationsTextExtra textSizeChangerParagraphs" style="display: none"><span
+                            class="marker">•</span>Cite as informações
+                        adicionais que acredite que são relevantes
+                    </p>
+                    <p class="additionalInformationsTextExtra textSizeChangerParagraphs" style="display: none"><span
+                            class="marker">•</span>Cite as informações
+                        adicionais que acredite que são relevantes
+                    </p>
+                    <p class="additionalInformationsTextExtra textSizeChangerParagraphs" style="display: none"><span
+                            class="marker">•</span>Cite as informações
+                        adicionais que acredite que são relevantes
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="rightColumn">
+
+            <section id="textColor">
+
+                <hr>
+
+                <h3>COR DO TEXTO (TÍTULOS)</h3>
+
+                <hr>
+
+                <div class="colorContainer">
+
+                    <div class="textColorContent colorRed"></div>
+                    <div class="textColorContent colorGreen"></div>
+                    <div class="textColorContent colorBlue"></div>
+                    <div class="textColorContent colorYellow"></div>
+                    <div class="textColorContent colorOrange"></div>
+                    <div class="textColorContent colorPurple"></div>
+                    <div class="textColorContent colorBrown"></div>
+                    <div class="textColorContent colorBlack"></div>
+
+                </div>
+
+            </section>
+
+            <section id="textFormatting">
+
+                <hr>
+
+                <h3>FORMATAÇÃO DO TEXTO</h3>
+
+                <hr>
+
+                <div id="FormattingButtons">
+
+                    <div class="FormattingButtonsContainer">
+                        <h4 class="FormattingButtonsMainText">Tamanho da Fonte:</h4>
+                        <div id="smallFontSize" class="FormattingButtonsContent">
+                            <h4 class="FormattingButtonsContentText">Pequena</h4>
+                        </div>
+                        <div id="mediumFontSize" class="FormattingButtonsContent">
+                            <h4 class="FormattingButtonsContentText">Média</h4>
+                        </div>
+                        <div id="largeFontSize" class="FormattingButtonsContent">
+                            <h4 class="FormattingButtonsContentText">Grande</h4>
+                        </div>
+                    </div>
+
+                    <div class="FormattingButtonsContainer">
+                        <h4 class="FormattingButtonsMainText">Tipo de Fonte:</h4>
+                        <div id="timesFontType" class="FormattingButtonsContent">
+                            <h4 class="FormattingButtonsContentText">Times New Roman</h4>
+                        </div>
+                        <div id="arialFontType" class="FormattingButtonsContent">
+                            <h4 class="FormattingButtonsContentText">Arial</h4>
+                        </div>
+                        <div id="verdanaFontType" class="FormattingButtonsContent">
+                            <h4 class="FormattingButtonsContentText">Verdana</h4>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <section id="pageDecoration">
+
+                <hr>
+
+                <h3>DECORAÇÃO</h3>
+
+                <hr>
+
+                <div id="pageDecorationContainer">
+
+                    <h4>Faixa Lateral:</h4>
+
+                    <div class="colorContainer">
+
+                        <div class="decorationColorContent colorRed"></div>
+                        <div class="decorationColorContent colorGreen"></div>
+                        <div class="decorationColorContent colorBlue"></div>
+                        <div class="decorationColorContent colorYellow"></div>
+                        <div class="decorationColorContent colorOrange"></div>
+                        <div class="decorationColorContent colorPurple"></div>
+                        <div class="decorationColorContent colorBrown"></div>
+                        <div class="decorationColorContent colorGray"></div>
+                        <div class="decorationColorContent noColor"></div>
+
+                    </div>
+
+                    <h4>Marcadores:</h4>
+
+                    <div class="colorContainer">
+
+                        <div class="decorationColorContent2 colorRed"></div>
+                        <div class="decorationColorContent2 colorGreen"></div>
+                        <div class="decorationColorContent2 colorBlue"></div>
+                        <div class="decorationColorContent2 colorYellow"></div>
+                        <div class="decorationColorContent2 colorOrange"></div>
+                        <div class="decorationColorContent2 colorPurple"></div>
+                        <div class="decorationColorContent2 colorBrown"></div>
+                        <div class="decorationColorContent2 colorBlack"></div>
+                        <div class="decorationColorContent2 noColor"></div>
+
+                    </div>
+
+                    <h4>Linhas:</h4>
+                    <select id="lineSelector" name="stripes">
+                        <option value="yes" selected>Sim</option>
+                        <option value="no">Não</option>
+                    </select>
+
+                </div>
+
+
+
+            </section>
+
+            <section id="printSection">
+
+                <div id="printSectionContainer">
+                    <h4 id="printSectionContent">Imprimir / Salvar como PDF</h4>
+                </div>
+                <div id="dialogMessage">Modo de impressão: Retrato / Colorido / Sem margem / Escala padrão / Com gráficos de fundo</div>
+
+            </section>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
