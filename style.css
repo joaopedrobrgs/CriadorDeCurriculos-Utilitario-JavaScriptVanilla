@@ -1,0 +1,565 @@
+/* GENERAL */
+
+* {
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Times New Roman', Times, serif; */
+}
+
+body {
+    /* background-color: rgb(255, 255, 255); */
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.allPageContainer{
+    max-width: 1400px;
+    margin: auto;
+}
+
+.d-inline{
+    display: inline;
+}
+
+.mb-10px{
+    margin-bottom: 10px;
+}
+
+/* HEADER */
+
+#headerContainer {
+    background-color: black;
+    overflow: hidden;
+    line-height: 30px;
+    padding: 10px;
+}
+
+    #headerLogo {
+        text-align: center;
+        color: white;
+        padding: 5px;
+    }
+
+/* LEFT COLUMN */
+
+#leftColumn{
+    display: flex;
+    flex-direction: column;
+    float: left;
+    width: 25%;
+    overflow: hidden;
+}
+
+/* LEFT COLUMN - Personal Informations */
+
+#personalInfo{
+    padding-top: 10px;
+}
+
+#personalInfo h3{
+    text-align: center;;
+    color: black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    }
+
+#personalInfo hr{
+    margin: auto;
+    width: 95%;
+    border-style:dashed;
+    color: black;
+    }
+
+#pInfoInputs{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+    #pInfoInputs input{
+        width: 80%;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        /* border: none; */
+        margin-top: 5px;
+        margin-bottom: 5px;
+        margin-right: 5px;
+        margin-left: 5px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    #pInfoInputs span{
+        color: black;
+        display: block;
+        font-size: 14px;
+    }
+
+        .halfLineInput{
+            display: inline-block;
+            width: 44%;
+        }
+
+        .twoLinesTextArea{
+            width: 80%;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            /* border: none; */
+            margin-top: 5px;
+            margin-bottom: 5px;
+            margin-right: 5px;
+            margin-left: 5px;
+            resize: none;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .fourLinesTextArea{
+            width: 80%;
+            height: 60px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            /* border: none; */
+            margin-top: 5px;
+            margin-bottom: 5px;
+            margin-right: 5px;
+            margin-left: 5px;
+            resize: none;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .manyLinesTextArea{
+            width: 80%;
+            height: 120px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            /* border: none; */
+            margin-top: 5px;
+            margin-bottom: 5px;
+            margin-right: 5px;
+            margin-left: 5px;
+            resize: none;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .extraButton{
+            display: inline-block;
+            width: 20%;
+            height: 20px;
+            background-color: gray;
+            margin-bottom: 25px;
+        } 
+        .extraButton:hover{
+            cursor: pointer;
+        }
+
+        .extraButtonMinus{
+            display: inline-block;
+            width: 20%;
+            height: 20px;
+            background-color: gray;
+            margin-bottom: 25px;
+        } 
+        .extraButtonMinus:hover{
+            cursor: pointer;
+        }
+
+        input[type="button"]:hover{
+            cursor:pointer;
+        }
+
+/* CENTER COLUMN */
+
+#centerColumn{
+    display: flex;
+    flex-direction: column;
+    float: left;
+    width: 50%;
+    background-color: rgb(230,230,230);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+#pageContainer{
+    margin: auto;
+    /* width: 80vh;*/
+    /* height: 56.57vw; */
+    max-width: 60vh;
+    background-color: white;
+    padding: 3em;
+    font-family: 'Times New Roman', Times;
+    font-size: 2.3vh;
+    text-align: justify;
+    box-sizing: border-box;
+    position: relative;
+    /* Comando para quebra de linha: */
+    word-wrap: break-word;
+}
+
+.horizontalLine{
+    width: 100%;
+    border: 0.5px solid rgba(0,0,0,0.2);
+    display: block;
+    margin: auto;
+    margin-top: 0.5em;
+    margin-bottom: 0.2em;
+}
+
+@media print {
+    body * {
+      visibility:hidden;
+    }
+    #leftColumn{
+        display: none;
+    }
+    #headerContainer{
+        display: none;
+    }
+    #rightColumn{
+        display: none;
+    }
+    #pageContainer, #pageContainer *{
+        visibility: visible;
+    }
+    #pageContainer {
+            position:absolute;
+            top: 0;
+            left: 0;
+            margin-top: 3px;
+            max-width: 80vh;
+          }
+}
+
+    .marker{
+        display: inline;
+        color: black;
+        margin-right: 0.2em;
+        font-size: 1.5em;
+        position: relative;
+        top: 5px;
+      }
+
+/* Tamanho dos paragrafos e dos títulos */
+.textSizeChangerParagraphs{
+    font-size: 0.7em;
+}
+
+.textSizeChangerTitles{
+    font-size: 1.0em;
+}
+
+
+/* First Bloc */
+
+#pInfoFirstBloc{
+    text-align: center;
+    padding-bottom: 1.4em;
+}
+
+#pInfoFirstBloc h1{
+    padding-bottom: 0.5em;
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
+
+/* Objective Bloc */
+
+#objectiveBloc{
+    padding-bottom: 1.4em;
+}
+
+/* Academic Formation Bloc*/
+
+#academicFormationBloc{
+    padding-bottom: 1.4em; 
+}
+
+/* Professional Experience Bloc*/
+
+#professionalExperienceBloc{
+    padding-bottom: 1.4em; 
+}
+
+/* Qualifications Bloc */
+
+#qualificationsBloc{
+    padding-bottom: 1.4em;
+}
+
+/* Profile Bloc */
+
+#profileBloc{
+    padding-bottom: 1.4em;
+}
+
+/* Add Informations Bloc */
+
+/* RIGHT COLUMN */
+
+#rightColumn{
+    display: flex;
+    flex-direction: column;
+    float: right;
+    width: 25%;
+    /* background-color: rgb(50,50,50); */
+    overflow: hidden;
+}
+
+/* RIGHT COLUMN - TEXT COLOR*/
+
+#textColor{
+    padding-top: 10px;
+}
+
+#textColor h3{
+    text-align: center;;
+    color: black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    }
+
+#textColor hr{
+    margin: auto;
+    width: 95%;
+    border-style:dashed;
+    color: black;
+    }
+
+.colorContainer{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+    .textColorContent{
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        border: solid black 1px;
+        border-radius: 3px;
+        transition: width 500ms, height 500ms;
+    }
+
+    .textColorContent:hover{
+        cursor: pointer;
+        width: 22px;
+        height: 22px;
+    }
+
+    .colorRed{
+        background-color: red;
+    }
+
+    .colorGreen{
+        background-color: green;
+    }
+
+    .colorBlue{
+        background-color: darkblue;
+    }
+
+    .colorYellow{
+        background-color: yellow;
+    }
+
+    .colorOrange{
+        background-color: orange;
+    }
+
+    .colorPurple{
+        background-color: purple;
+    }
+
+    .colorBrown{
+        background-color: brown;
+    }
+
+    .colorBlack{
+        background-color: black;
+    }
+
+    .colorGray{
+        background-color: gray;
+    }
+
+
+/* RIGHT COLUMN - Text Formatting */
+
+#textFormatting h3{
+    text-align: center;
+    color: black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    }
+
+#textFormatting hr{
+    margin: auto;
+    width: 95%;
+    border-style:dashed;
+    color: black;
+    }
+
+    .FormattingButtonsContainer{
+        padding-top: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .FormattingButtonsMainText{
+        text-align: center;
+        color: black;
+        padding-bottom: 10px;
+    }
+
+        .FormattingButtonsContent{
+            background-color: rgb(240,240,240);
+            width: 50%;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            margin: auto;
+            margin-bottom: 10px;
+            transition: background-color 300ms, width 300ms;
+        }
+
+        .FormattingButtonsContent:hover{
+            width: 60%;
+            cursor: pointer;
+            background-color: rgb(225, 225, 225);
+        }
+
+            .FormattingButtonsContentText{
+                text-align: center;
+                color: black;
+                font-size: 12px;
+            }
+
+/* RIGHT COLUMN - PAGE DECORATION*/
+
+#pageDecoration{
+    padding-top: 10px;
+}
+
+#pageDecoration h3{
+    text-align: center;
+    color: black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    }
+
+#pageDecoration hr{
+    margin: auto;
+    width: 95%;
+    border-style:dashed;
+    color: black;
+    }
+
+    #pageDecorationContainer{
+        padding-top: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+            #pageDecorationContainer h4{
+                text-align: center;
+                color: black;
+            }
+
+    .decorationColorContent, .decorationColorContent2{
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        border: solid black 1px;
+        border-radius: 3px;
+        transition: width 500ms, height 500ms;
+    }
+
+    .decorationColorContent:hover, .decorationColorContent2:hover{
+        cursor: pointer;
+        width: 22px;
+        height: 22px;
+    }
+
+        .noColor{
+            background-color: white;
+            background-image: url(./assets/diagonalLine.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+    
+    #pageDecoration select{
+        margin: auto;
+        margin-top: 10px;
+        width: 50%;
+    }
+
+    #pageDecoration select:hover{
+        cursor: pointer;
+    }
+
+/* RIGHT COLUMN - PRINT SECTION*/
+
+#printSection{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+}
+
+    #printSectionContainer{
+        background-color: green;
+        width: 80%;
+        line-height: 30px;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+
+    #printSectionContainer:hover{
+        cursor: pointer;
+    }
+
+        #printSectionContent{
+            text-align: center;
+            color: white;
+            font-size: 14px;
+        }
+
+        #dialogMessage{
+            background-color: rgb(200,200,200);
+            opacity: 0.3;
+            border-radius: 5px;
+            display:block;
+            text-align: center;
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 12px;
+        }
+
+@media screen and (max-width: 1000px) {
+
+#headerButtons{
+    float: none;
+    margin-right: 0;
+}
+
+#headerButtons li {
+    float: none;
+    display: block;
+    text-align: center;
+    width: 51%;
+    margin: auto;  
+}
+
+#centerColumn{
+    width: 100%;
+}
+
+#leftColumn{
+    width: 100%;
+}
+
+#rightColumn{
+    width: 100%;
+}
+
+}
+
